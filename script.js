@@ -11,7 +11,6 @@ function showSlides(n) {
     if (n >= slides.length) { slideIndex = 0 }
     if (n < 0) { slideIndex = slides.length - 1 }
 
-    // Debugging output
     console.log('Total slides:', slides.length);
     console.log('Current slide index:', slideIndex);
 
@@ -22,7 +21,6 @@ function showSlides(n) {
     slides[slideIndex].style.display = "flex";
     console.log('Slide', slideIndex, 'set to display:flex');
 
-    // Check the structure of the slide
     const currentSlide = slides[slideIndex];
     const imageRows = currentSlide.getElementsByClassName('image-row');
     console.log('Number of image rows in current slide:', imageRows.length);
