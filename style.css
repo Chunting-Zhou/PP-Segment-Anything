@@ -60,12 +60,12 @@ h1, h2 {
 }
 
 .image-row img {
-    height: 150px; /* Set a fixed height for all images */
-    width: auto; /* Auto width to maintain aspect ratio */
+    height: 150px; /* Fixed height */
+    width: auto; /* Width adjusts to maintain aspect ratio */
     margin: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    object-fit: contain; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures image fits within the container and maintains aspect ratio */
 }
 
 .carousel-btn {
