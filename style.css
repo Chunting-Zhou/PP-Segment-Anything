@@ -24,13 +24,12 @@ h1, h2 {
 
 .carousel {
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1000px;
+    position: relative;
 }
 
 .carousel-container {
-    position: relative;
     overflow: hidden;
-    width: 100%;
 }
 
 .carousel-content {
@@ -41,9 +40,21 @@ h1, h2 {
 .slide {
     min-width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
+    justify-content: center;
+}
+
+.image-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .carousel-btn {
