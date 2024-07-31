@@ -3,45 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction of Segment Anything</title> <!-- Title of the page -->
+    <title>Introduction of Segment Anything</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <h1>Introduction of Segment Anything</h1> <!-- Main title -->
-        <h2>Segment the Image</h2> <!-- Subtitle -->
+        <h1>Introduction of Segment Anything</h1>
+        <h2>Segment the Image</h2>
     </header>
 
     <section class="explanation">
-        <p>Image with promote points</p> <!-- Description for the top row images -->
+        <p>Image with promote points</p>
     </section>
 
     <section class="carousel">
         <div class="carousel-container">
-            <button class="carousel-btn prev" onclick="plusSlides(-1)">&#10094;</button> <!-- Previous slide button -->
+            <button class="carousel-btn prev" onclick="plusSlides(-1)">&#10094;</button>
             <div class="carousel-content">
                 <div class="slide">
-                    <div class="image-box">
-                        <img src="./image/image1.png" alt="Image with promote points"> <!-- Image 1 -->
-                        <img src="./image/image2.png" alt="Image with promote points"> <!-- Image 2 -->
-                        <img src="./image/image3.png" alt="Image with promote points"> <!-- Image 3 -->
-                        <img src="./image/image1.jpg" alt="Segment"> <!-- Image 4 -->
-                        <img src="./image/image2.jpg" alt="Segment"> <!-- Image 5 -->
-                        <img src="./image/image3.jpg" alt="Segment"> <!-- Image 6 -->
+                    <div class="image-row">
+                        <img src="./image/image1.png" alt="Image with promote points">
+                        <img src="./image/image2.png" alt="Image with promote points">
+                        <img src="./image/image3.png" alt="Image with promote points">
+                    </div>
+                    <div class="image-row">
+                        <img src="./image/image1.jpg" alt="Segment">
+                        <img src="./image/image2.jpg" alt="Segment">
+                        <img src="./image/image3.jpg" alt="Segment">
                     </div>
                 </div>
                 <!-- Add more slide divs as needed for additional sets of six images -->
             </div>
-            <button class="carousel-btn next" onclick="plusSlides(1)">&#10095;</button> <!-- Next slide button -->
+            <button class="carousel-btn next" onclick="plusSlides(1)">&#10095;</button>
         </div>
     </section>
 
     <section class="explanation">
-        <p>Segment</p> <!-- Description for the bottom row images -->
+        <p>Segment</p>
     </section>
 
     <footer>
-        <p>© 2024 Segment Anything</p> <!-- Footer content -->
+        <p>© 2024 Segment Anything</p>
     </footer>
 
     <script src="script.js"></script> <!-- Link to your JavaScript file -->

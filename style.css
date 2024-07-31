@@ -30,6 +30,7 @@ h1, h2 {
 
 .carousel-container {
     overflow: hidden;
+    position: relative;
 }
 
 .carousel-content {
@@ -40,18 +41,19 @@ h1, h2 {
 .slide {
     min-width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-row {
+    display: flex;
     justify-content: center;
-}
-
-.image-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    width: 80%;
+    margin-bottom: 10px;
 }
 
-.image-box img {
-    width: 100%;
+.image-row img {
+    width: 300px; /* Adjust width as needed */
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
