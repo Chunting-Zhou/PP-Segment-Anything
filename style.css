@@ -65,6 +65,7 @@ h1, h2 {
     margin: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    object-fit: contain; /* Ensures image fits within the container and maintains aspect ratio */
 }
 
 .carousel-btn {
