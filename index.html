@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction of Segment Anything</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,27 +12,28 @@
         <h2>Segment the Image</h2>
     </header>
 
-    <section class="explanation">
-        <p>Image with promote points</p>
-    </section>
-
-    <section class="carousel">
-        <div class="carousel-container">
+    <section class="content">
+        <div class="explanation">
+            <p>Image with promote points</p>
+        </div>
+        <div class="carousel">
             <button class="carousel-btn prev" onclick="plusSlides(-1)">&#10094;</button>
-            <div class="carousel-content">
-                <div class="slide">
-                    <div class="image-row">
-                        <img src="./image/image1.png" alt="Image with promote points">
-                        <img src="./image/image2.png" alt="Image with promote points">
-                        <img src="./image/image3.png" alt="Image with promote points">
+            <div class="carousel-container">
+                <div class="carousel-content">
+                    <div class="slide" style="display: flex;">
+                        <div class="image-row" style="display: flex;">
+                            <img src="./image/image1.png" alt="Image with promote points">
+                            <img src="./image/image2.png" alt="Image with promote points">
+                            <img src="./image/image3.png" alt="Image with promote points">
+                        </div>
+                        <div class="image-row" style="display: flex;">
+                            <img src="./image/image4.png" alt="Segment">
+                            <img src="./image/image5.png" alt="Segment">
+                            <img src="./image/image6.png" alt="Segment">
+                        </div>
                     </div>
-                    <div class="image-row">
-                        <img src="./image/image1.jpg" alt="Segment">
-                        <img src="./image/image2.jpg" alt="Segment">
-                        <img src="./image/image3.jpg" alt="Segment">
-                    </div>
+                    <!-- Add more slides here as needed -->
                 </div>
-                <!-- Add more slides here as needed -->
             </div>
             <button class="carousel-btn next" onclick="plusSlides(1)">&#10095;</button>
         </div>
@@ -46,6 +47,6 @@
         <p>© 2024 Segment Anything</p>
     </footer>
 
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
