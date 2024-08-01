@@ -8,27 +8,37 @@ body {
 
 .header-content {
     text-align: center;
-    padding: 20px;
+    padding: 100px 100px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
 }
 
 .header-content h1 {
-    margin: 0;
-    font-size: 24px;
+    margin: 0 0 30px 0;
+    font-size: 50px;
+    line-height: 2.0;
 }
 
 .header-content p {
     margin: 5px 0;
+    font-size: 20px;
+    line-height: 2.0;
 }
 
 .introduction-content {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: left;
 }
 
-.introduction-content h2, .introduction-content h3 {
-    margin: 0 0 10px;
+.introduction-content h2 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+}
+
+.introduction-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #aaaaaa;
 }
 
 .content {
@@ -42,15 +52,16 @@ body {
 }
 
 .description {
-    width: 180px; /* Ensure enough space for the text */
-    text-align: left;
-    margin-right: 80px; /* Extra margin to push images to the right */
+    width: 200px;
+    text-align: center; /* Center the text within the description box */
+    margin-right: 20px;
+    margin-left: 60px;
 }
 
 .images {
     display: flex;
     flex-direction: column;
-    margin-left: 100px; /* Additional margin to move images right */
+    margin-left: 80px;
 }
 
 .image-row {
@@ -84,8 +95,8 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: white; /* Make the entire circle white */
-    border: none; /* Remove border for a flat appearance */
+    background-color: white;
+    border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
@@ -95,33 +106,52 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 2;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-btn:before {
     content: '';
     display: inline-block;
     border-style: solid;
-    border-width: 7px 0 7px 12px; /* Triangle pointing right */
-    border-color: transparent transparent transparent #333; /* Dark gray triangle */
+    border-width: 7px 0 7px 12px;
+    border-color: transparent transparent transparent #333;
 }
 
 .carousel-btn.prev:before {
-    border-width: 7px 12px 7px 0; /* Triangle pointing left */
-    border-color: transparent #333 transparent transparent; /* Dark gray triangle */
+    border-width: 7px 12px 7px 0;
+    border-color: transparent #333 transparent transparent;
 }
 
 .carousel-btn:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Positioning for navigation buttons */
 .prev {
-    left: 290px; /* Adjust this value to position the left button closer to the image container */
+    left: 290px;
 }
 
 .next {
-    right: 10px; /* Adjust this value to position the right button closer to the image container */
+    right: 10px;
+}
+
+.indicator-dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: width 0.3s ease;
+}
+
+.active, .dot:hover {
+    width: 20px;
 }
 
 footer {

@@ -82,7 +82,10 @@
             </div>
             <button class="carousel-btn prev" onclick="changeSlide(-1)"></button>
             <button class="carousel-btn next" onclick="changeSlide(1)"></button>
-
+            <div class="indicator-dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
         </div>
     </section>
 
@@ -90,24 +93,6 @@
         <p>© 2024 Segment Anything</p>
     </footer>
 
-    <script>
-        let slideIndex = 0;
-        showSlides(slideIndex);
-
-        function changeSlide(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            if (n >= slides.length) { slideIndex = 0 }
-            if (n < 0) { slideIndex = slides.length - 1 }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex].style.display = "block";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
