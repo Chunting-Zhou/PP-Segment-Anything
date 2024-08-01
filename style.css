@@ -42,7 +42,7 @@ body {
 }
 
 .description {
-    width: 200px; /* Ensure enough space for the text */
+    width: 180px; /* Ensure enough space for the text */
     text-align: left;
     margin-right: 80px; /* Extra margin to push images to the right */
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .image-row img {
-    height: 150px;
+    height: 200px;
     width: auto;
     margin-right: 20px;
     border: none;
@@ -121,7 +121,7 @@ body {
 }
 
 .next {
-    right: 230px; /* Adjust this value to position the right button closer to the image container */
+    right: 10px; /* Adjust this value to position the right button closer to the image container */
 }
 
 footer {
